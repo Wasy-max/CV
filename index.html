@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curriculum vitae</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #141e30, #243b55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .wrapper {
+            width: 1000px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        .sidebar {
+            width: 300px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .sidebar img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #00f2fe;
+        }
+        
+        .sidebar h2 {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        
+        .socials button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #05acb4b4, #4facfe);
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .socials button:hover {
+            transform: scale(1.05);
+        }
+        
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .card h3 {
+            margin-bottom: 15px;
+            color: #00f2fe;
+        }
+        
+        .education div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .skill p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        
+        .bar {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        
+        .bar div {
+            height: 100%;
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            border-radius: 10px;
+        }
+        
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <div class="sidebar">
+            <img src="https://i.ibb.co/4pDNDk1/avatar.png">
+            <h2>Nasir Hossain Wasy</h2>
+            <p>CSE Student | Future Python developer</p>
+
+            <div class="socials">
+                <button>Facebook</button>
+                <button>Instagram</button>
+                <button>Github</button>
+                <button>LinkedIn</button>
+            </div>
+        </div>
+
+
+        <div class="content">
+
+            <div class="card">
+                <h3>About Me</h3>
+                <p>
+                    I am currently studying CSE and trying to become a professional Python developer.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Courses Completed</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="card education">
+                <h3>Education</h3>
+                <div><span>2020</span> SSC</div>
+                <div><span>2022</span> HSC</div>
+                <div><span>2023 - Present</span> Undergraduate</div>
+            </div>
+
+            <div class="card">
+                <h3>Skills</h3>
+
+                <div class="skills">
+                    <div class="skill">
+                        <p>Problem Solving <span>80%</span></p>
+                        <div class="bar">
+                            <div style="width:80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Web Development<span>85%</span></p>
+                        <div class="bar">
+                            <div style="width:85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Machine Learning <span>62%</span></p>
+                        <div class="bar">
+                            <div style="width:62%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>UI/UX Design <span>50%</span></p>
+                        <div class="bar">
+                            <div style="width:50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
